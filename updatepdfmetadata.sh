@@ -44,7 +44,7 @@ while true ; do
 			fi;;
 		-p|--print-pdfinfo) printpdfinfoFLAG=1 ; shift ;;
 		-d|--dont-clean) dontcleanFLAG=1 ; shift ;;
-		-h|--help) echo "Usage: $0 [--author <author>] [--title <title>] [--subject <subject>] [--custom \"<PDF key>,<value>\"] [--dont-clean] [--print-pdfinfo] <PDFfile> [<dumpFILE>] [<outFILE>]" ; exit 0 ;;
+		-h|--help) echo "Usage: $0 [--author <author>] [--title <title>] [--subject <subject>] [--custom \"<PDF key>;<value>\"] [--dont-clean] [--print-pdfinfo] <PDF input file> [<dump FILE>] [<output FILE>]" ; exit 0 ;;
 		--) shift ; break ;;
 		*) echo $me"Error handling options." ; exit 1 ;;
 	esac
