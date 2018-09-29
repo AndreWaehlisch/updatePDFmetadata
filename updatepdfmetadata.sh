@@ -75,7 +75,7 @@ if [[ -z "$sedscriptSTRING" ]]; then
 fi
 
 if [[ -z "$dumpFILE" ]]; then
-	echo "Using default dump file: "$defaultdumpFILE
+	if [[ -n "$dontcleanFLAG" ]]; then echo "Using default dump file: "$defaultdumpFILE; fi
 	dumpFILE=$defaultdumpFILE
 fi
 dumpnewFILE="$dumpFILE.new"
