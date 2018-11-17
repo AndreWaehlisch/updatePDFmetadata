@@ -1,5 +1,5 @@
 # updatePDFmetadata
-Updates PDF metadata from the commandline using *pdftk*. Special characters are properly escaped using *recode*.
+Updates PDF metadata from the commandline using *pdftk*. Special characters are properly escaped using either *recode* or *python3*.
 
 #### Synopsis
 	./updatepdfmetadata.sh [--author <author>] [--title <title>] [--subject <subject>] [--custom \"<PDF key>;<value>\"] [--dont-clean] [--print-pdfinfo] <PDF input file> [<output FILE>] [<dump FILE>]
